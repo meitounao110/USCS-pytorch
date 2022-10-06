@@ -1,0 +1,18 @@
+data_root: # path to dataset. e.g. /USCS/datasets
+name: # type your log name. e.g. voc_ratio8_res50
+epoch: 52
+labeled_ratio: 8
+model: deeplabv3plus_resnet50
+dataset: voc
+num_members: 2
+dist: True
+gpu_id: 0,1
+lr: 0.01
+crop_size: 320
+base_size: 400
+batch_size: 16
+unl_batch_size: 16
+output_stride: 16
+test_only: False
+#ckpt: checkpoints/voc4_random0.4_weight1_ep60_Nunc0.5_res50_Feb27_07_54.pth
+#save_val_results: True
